@@ -23,7 +23,7 @@ class room{
     }
 };
 
-int main(){
+int main(){ 
     room obj, obj1(4.3, 6.2), obj2(4.5);
     cout<<"when no arguement is pass: "<<endl;
     cout<<"the area of room is: "<<obj.calculatearea()<<endl;

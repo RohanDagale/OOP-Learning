@@ -35,9 +35,24 @@ void swap(int &x, int &y){   //swaping pass by reference
 int plusfunc(int x, int y){     //function overloading with same name diff parameters
     return x + y;
 }
-double plusfunc(double x, double y){
+double plusfunc(double x, double y){    //function overloading
     return x + y;
 }
+
+string plusfunc(string x, string y){   //function overloading
+    return x + y;
+}
+
+// calculate the volume of cyclindar
+int volume(double r, int h){
+    return(3./14 * r *r *h);
+}
+
+//volume of cube 
+int volume(int a){
+    return a * a *a;
+}
+
 
 int main(){
     myfunction();
@@ -60,9 +75,14 @@ int main(){
     cout<<firstnum<<secnum<<endl;
     int num1 = plusfunc(2, 8);
     int num2 = plusfunc(1, 5);
+    string str = plusfunc("hello", "world");
+    double cyl = volume(4, 6);
+    int cube = volume(5);
     cout<<"int: "<< num1 <<endl;
     cout<<"double: "<< num2 <<endl;
-
+    cout<<str<<endl;
+    cout<<"the volume of cylindar is: "<<cyl<<endl;
+    cout<<"the volume of cube is: "<<cube<<endl;
     return 0;
 }
 
